@@ -16,7 +16,7 @@ public class UniqueFinder {
             }
             return expected;
         } catch (NullPointerException npe) {
-            throw new IllegalArgumentException("Text is null.");
+            throw new IllegalArgumentException("Text is null.", npe);
         }
     }
 }
